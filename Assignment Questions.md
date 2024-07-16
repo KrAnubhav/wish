@@ -1,0 +1,811 @@
+##  Assignment-1 Language Fundamentals
+
+- 1. Write a program to accept a double value. Separate the whole value from the fractional value and store them in two variables. Display the same.
+- 2. Write a program to accept three numbers and find the largest of three numbers using ternary operator.
+- 3. Write a program to accept a number and display whether the number is odd or even using the ternary operator.
+- 4. Write a program to accept three numbers and find the largest and second largest values of three numbers
+- 5. Write a program to accept a student’s name and three marks. Display the total and average. Display result as First class, Second class, Pass class and Fails.
+- 6. Write a program to accept a number and display the last digit of the number in words.
+- 7. Write a program to accept an alphabet and display whether its a vowel or consonant
+- 8. Write a program to find the sum of all odd numbers from 1 to N. Accept N. Display the sum.
+- 9. Write a program to find the reverse of a number. Store the reverse value in a different variable. Display the reverse.
+- 10. Write a program to find the factorial of a non-negative number.
+- 11. Write a program to generate the following series:
+
+1, -2, 3, -4, 5, -6, … N
+
+- 12. Write a program to find the sum of all the prime numbers in the range n to m.
+
+Display each prime number and also the final sum.
+
+- 13. Write a program to store N elements in an array of integer. Display the elements. Accept a number to be searched. Display whether the number is found or not in the array (LINEAR SEARCH).
+- 14. Write a program to find the factorial of a number using recursion.
+
+## Assignment-2 
+
+#### **Classes and Objects**
+
+1. Create a class called biggest consisting of a single dimensional array of a particular size as it data members and a function called display() in which the largest element of the array is found and displayed.
+
+2. Create a class rectangle. The class has attributes length and width, each of which defaults to 1. It should have set and get functions for both length and width.
+
+It should have member function that calculate the area of the rectangle.
+
+3. Write a class Person with FirstName and LastName as data members. Override the toString() method to return the full name of the person. Define constructors to take appropriate parameters.
+
+4. Write a program which keeps track of the number of objects that are created and display the count in a function called display().
+
+5. Create an Employee class with members emp no, name, department and salary. In main create a reference variable of type Employee. Allocate memory for the Employee using new operator. Read the employee details from command line arguments and initialize the data members. Also display the data members values.
+
+6. Create a class called BankAccount with AcctNo , balance ,AcctType as data members.Create objects to hold specific values of the data members which are initialized using constructors.Write functions to perform the below operations
+
+a) To deposit an amount of 10000
+
+b) To withdraw an amount of 5000
+
+c) To display the AccountDetails
+
+7. Create a Employee class with members emp no, name, department and salary. Use single dimensional array of employee objects of size 10, to read 10 employees data from command line arguments. After reading display the same data on the console from array. Also have a function to determine which employees salary is the highest
+
+8. a) Create a class to hold information about books. Write a function to display information about the
+
+book.
+
+Data members : Title , Author , cost , no_of_books
+
+b) Create 3 instances of the above class and initialize the members of the class with the data accepted from the user.
+
+c) Accept a title and the no_of books required from the user.Find whether the book exists . If it exists , check if the no_of_ books are sufficient and if so indicate the total cost the books.
+
+## Assignment-3
+
+**After completing the hands-on exercises, you will be able to:**
+
+**Develop simple Java program**
+
+**1.Problem Statement:** **Find out whether the following file will compile. If it does not compile, how you would fix it?**
+
+``` Java
+public static void main(String[ ] args) {
+
+      int x = 5;
+
+      while (x > 1) {
+
+          x = x + 1;
+
+          if (x < 3) {
+
+               System.out.println(“small x”);
+
+          }
+
+      }
+ }
+ ```
+
+**2.Problem Statement:**
+
+**Find out whether the following file will compile. If it does not compile, how you would fix it?**
+
+``` Java
+class Digit {
+      public static void main(String[ ] args) {
+	      int x = 1;
+          while (x < 10) {
+	          if (x > 3) {
+		          System.out.println(“big x”);
+		          }
+		     }
+        }
+   }
+```
+
+**3. Problem Statement:**
+
+**Find out whether the following file will compile. If it does not compile, how you would fix it?**
+``` Java
+class Loop {
+
+                  int x = 5;
+
+                             while (x  > 1) {
+
+                                   x = x - 1;
+
+                        if (x < 3) {
+
+                              System.out.println(“small x”);
+
+                        }
+
+                   }
+
+             }
+```
+**Deliverables Expected for the above 3 problem statements:**
+- **Submit a document containing:**
+	- **Screenshot of the output**
+	- **Your justification on the answer**
+
+
+## Assignment-4
+Hands-on Exercise Objective
+After completing the hands-on exercises, you will be able to:
+•     You will learn about the usage of arithmetic, relational, logical operators and type casting.
+Scenario: Developers need to develop a tax calculator for calculating tax using arithmetic, relational and logical operators.
+Problem Statement 1: Declaring instance variables.
+Develop a class “TaxCalculator” inside a package “com.capgemini.tax”. The class should have an instance float variable named “basicSalary” and a boolean variable  named “citizenship”.
+Problem Statement 2: Usage of Arithmetic operators.
+In the TaxCalculator class  create a method named  calculateTax()  that  should calculate and print the tax, the tax should  be calculated as follows
+tax = 30*basic salary/100
+NOTE: The value stored in the instance variable” basicSalary” should be used in the above calculation.
+The calculated tax needs to be stored in another instance float variable “tax”.
+This method will display the following message in the console.
+“The Tax of the employee  for  the   <basic Salary> is <tax>”
+Problem Statement 3: How to type cast?
+In the TaxCalculator class  create a method named  deductTax() method this should reduce the tax calculated in problem statement 1 from  the basic salary and store it in a  instance int variable named  “nettSalary”.
+NOTE:  Ensure to use casting for converting float to int.
+This method will also display the following message in the console.
+“The nett salary of the employee” <nettSalary>
+
+Problem Statement 4: Usage of relational operator
+In the TaxCalculator class  create a method named  validateSalary() method should display a message as below if the basicSalary  is greater than 1 lakh  and  citizenship is true.
+“The salary and citizenship eligibility:  ” <response>
+<response> - The value would be printed as true if basic salary > 1 lakh and citizenship is true.
+The value would be printed as false for other conditions.
+Problem Statement 5: Execute the methods
+ Develop another class “EmployeeTax”  inside the package “ com.capgemini.tax” add a main method which sets the values and invoke the following methods in the TaxCalculator  object.
+Test Case 1:  Specify the following values and run the main method
+1.    Set  the value of citizenship as true, basicSalary as 25000.
+2.    Invoke the methods calculateTax(), deductTax(), validateTax().
+Output:  The following messages should be displayed in the console
+The Tax of the employee  for  the   25000 is 7500
+The nett salary of the employee 17500
+The salary and citizenship eligibility:  false
+Test Case 2:  Specify the following values and run the main method
+1.    Set  the value of citizenship as true, basicSalary as 125000.
+2.    Invoke the methods calculateTax(), deductTax(), validateTax().
+Output:  The following messages should be displayed in the console
+The Tax of the employee  for  the   125000 is 37500
+The nett salary of the employee 87500
+The salary and citizenship eligibility:  true
+
+## Assignment-5
+
+Develop simple Java program using if-else if - else statement.
+
+Problem Statement: 
+- Develop  classes  named  “Circle”, “Square”,  and “Triangle“ .Each  class should have a method named calculateArea()  which calculates  the area based on the below logic and display the appropriate message.
+- Develop a class “Shapes” inside a package “com.capgemini.shapes”. The class should have one  instance variables of type int named “”numberOfSides” and a method called calculateShapeArea(). This method takes two arguments one for identifying the shape and other for side length.
+- This method should identify the shape based on the numberOfSides and calculate the area and print it in console  as follows
+
+If  numberOfSides is 1 then  invoke the “calculateArea” of the  Circle Object.
+This method will also display the following message in the console.
+
+“The Area of the Circle is”<area>
+
+If  numberOfSides is 3  then  invoke the “calculateArea” of the  Triangle  Object.
+This method will also display the following message in the console.
+
+“The Area of the Triangle is”<area>
+
+If  numberOfSides is 4 then  invoke the “calculateArea” of the  Square Object.
+This method will also display the following message in the console.
+
+“The Area of the Square is”<area>
+
+If  numberOfSides is other than the specified ones then  display the message “No Shapes Present”.
+
+Note: <area> - The value would be printed based on the above logics of different shapes such as Circle, Triangle and Square.
+
+In the Shapes class add a main method which sets the values and invoke the following methods in the Shapes  object.
+
+Test Case 1:  Specify the following values and run the main method
+
+1.    Set the value of numberOfSides as 3 and sideLength as 12.
+
+2.    Invoke the method calculateShapeArea ().
+
+Expected Output:  The following messages should be displayed in the console
+The Area of the Triangle is  62.3538
+
+Test Case 2:  Specify the following values and run the main method
+
+1.    Set the value of numberOfSides as 4 and sideLength as 15.
+
+2.    Invoke the method calculateShapeArea ().
+
+Expected Output:  The following messages should be displayed in the console
+The Area of  the  Square  is  225
+
+Test Case 3:  Specify the following values and run the main method
+
+1.    Set the value of numberOfSides as 5 and sideLength as 15.
+
+2.    Invoke the method calculateShapeArea().
+
+Expected Output:  The following messages should be displayed in the console
+No Shapes Present
+
+## Assignment-6
+
+- Develop simple Java program using Switch/Case statement.
+
+Problem Statement:
+
+In the previous activity related to calculate area of circle/triangle and square replace the IF statements with Switch case.
+
+Now Execute the class for the following test cases,
+
+Test Case 1:  Specify the following values and run the main method
+
+1.    Set the value of numberOfSides as 3 and sideLength as 12.
+
+2.    Invoke the method calculateShapeArea ().
+
+Expected Output:  The following messages should be displayed in the console
+
+The Area of the Triangle is  62.3538
+
+Test Case 2:  Specify the following values and run the main method
+
+1.    Set the value of numberOfSides as 4 and sideLength as 15.
+
+2.    Invoke the method calculateShapeArea ().
+
+Expected Output:  The following messages should be displayed in the console
+
+The Area of  the  Square  is  225
+
+Test Case 3:  Specify the following values and run the main method
+
+1.    Set the value of numberOfSides as 5 and sideLength as 15.
+
+2.    Invoke the method calculateShapeArea().
+
+Expected Output:  The following messages should be displayed in the console
+
+No Shapes Present
+
+## Assignment-7
+
+•     Develop simple Java program using nested IF statement.
+
+Problem Statement:
+
+Develop a calculator for calculating the simple interest for a principle, number of years and rate of interest.
+
+Simple interest = P * N * R/100.
+
+Create a class SimpleInterestCalculator with three instance variable double principal amount, int number of years. Develop a method calculateSimpleInterest() and implement the logic as follows.
+
+The business logic for calculating the simple interest is as follows.
+
+If  principal is greater than one lakh
+
+If number of years is greater than 10
+
+Simple interest = P * N *10/100
+
+Otherwise if number of years < 10
+
+Simple interest = P * N *9.5/100
+
+Else if amount is less than one lakh
+
+If number of years is greater than 10
+
+Simple interest = P * N *5/100
+
+Otherwise if number of years < 10
+
+Simple interest = P * N *4.5/100
+
+The calculated simple interest is to be printed in the  calculateSimpleInterest() method.
+
+“The interest amount for a principal of <principal amount> and years <number of years> is  <Result>”
+
+Develop a main method which sets the instance variables and invoke the method  calculateSimpleInterest().
+
+Now Execute the class for the following test cases,
+
+Test Case 1:  Specify the following values and run the main method
+
+1.    Set the value of  principal amount  as 2 lakh  and number of years has 12
+
+2.    Invoke the method  calculateSimpleInterest ().
+
+Expected Output:  The following messages should be displayed in the console
+
+The interest amount for a principal 200000 and years 12 is 2400000
+
+Test Case 2:  Specify the following values and run the main method
+
+1.    Set the value of  principal amount  as 50,000  and number of years has 12
+
+2.    Invoke the method  calculateSimpleInterest ().
+
+Expected Output:  The following messages should be displayed in the console
+
+The interest amount for a principal 50000 and years 12 is 30000
+
+Test Case 3:  Specify the following values and run the main method
+
+1.    Set the value of  principal amount  as 50,000 and number of years has 5
+
+2.    Invoke the method  calculateSimpleInterest ().
+
+Expected Output:  The following messages should be displayed in the console
+
+The interest amount for a principal 50,000 and years 5 is 11,250.
+
+## Assignment-8
+
+Develop simple Java program using For loops and nested for loops statement.
+
+Problem Statement # 1: Develop a program which prints all the odd numbers between 1 and 200.
+
+The output should be printed in this format: 
+1,3,5……goes on till it prints the last odd number
+
+Problem Statement # 2: Develop a program to print the following format
+
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+
+Hint:  Use nested for loops to achieve this.
+
+## Assignment-9
+
+Develop simple Java program using while statement
+
+Problem Statement # 1:
+
+Develop a program which prints the prime numbers between 1 and 150
+
+The output should be printed in this format
+
+1,3,5……goes on till it prints the last prime number.
+
+Prime number definition: A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself. For example 5 is prime, as only 1 and 5 divide it.
+
+## Assignment-10
+
+•Use Scanner class to get user input from console
+
+Scenario: A kids laptop manufacturer needs to develop a laptop which will display a message first,
+
+Enter Option:
+
+Add-1
+
+Subtract-2
+
+Multiply-3
+
+Quit-4
+
+The kid should be allowed to enter an option. If the kid enters 1, a message needs to be displayed,
+
+“Enter two numbers to be added”.
+
+The kid should be allowed to enter two numbers (In two separate lines).
+
+Based on the numbers entered, the program should add and display the result as below
+
+“The result is <result>”
+
+After the result is displayed, the program should loop back and ask for the next menu entry. If the kid enters  4, the program should quit. (The program needs to be executed and do either one of the options  until the kid enters the option 4)
+
+Problem Statement:
+
+Create a class ScannerLaptopDemo.java with a main method which performs the required operations as specified above.
+
+Algorithm:
+
+1.    Display message as specified to print the various options 1 to 4.
+
+2.    On user enters one of the option based on the input the appropriate arithmetic operation is done as mentioned below.
+
+3.    Using switch statement, display the appropriate message.
+
+a.    Example if option is 1 “Enter two numbers to be added”, get the two numbers using Scanner class and print the added result.
+
+b.    If option is 2 “Enter two numbers to be subtracted”, get the two numbers using Scanner class and print the subtracted result.
+
+c.    If option is 3 “Enter two numbers to be multiplied”, get the two numbers using Scanner class and print the multiplied result.
+
+d.    If option is 4 terminate the program.
+
+  
+
+4.    Perform step 1 to 3 in a do-while loop (while option != 4).
+
+## Assignment-11
+
+Hands-on Exercise Objective
+
+After completing the hands-on exercises, you will be able to:
+- Declare constructors
+- Overload constructors
+- Chain the constructor calling
+- Apply access specifiers to constructors
+
+Problem Statement 1:  Declaring and using constructors
+
+Create a class Circle.java in a package “com.capgemini.shapes” , add a float instance variable radius and add a default constructor (Constructor 1) for the class. This constructor should initialize the radius to a default value 1.5f.
+
+The above constructor should be invoked from a main method from another class, Shape.java (in different package com.capgemini. geometry).
+
+Problem Statement 2: Overloading constructors and using “this” keyword.
+
+In the Circle.java class created above add an instance float variable pi and create two overloaded constructors.
+
+Constructor 2- with a float argument name radius. The constructor should initialize the class variable radius  with the method argument radius.
+
+NOTE:   The instance variable and the method argument should be named same as “radius”.
+
+Constructor 3- with two float arguments radius and pi. Default the class pi value to 3.5 and set the instance variable with the radius method argument.
+
+The constructor “constructor 2” should be invoked from a main method from class, Area.java (in a package com.capgemini.shapes).
+
+Problem Statement 3: Constructor Chaining
+
+In Circle.java, invoke the Constructor 3 created in the previous step from Constructor 2.
+
+Problem Statement 4:  Applying access specifiers to constructors/variables
+
+a. (Other classes must not be able to call this constructor). Also restrict the access to the variable radius to class level
+
+b. Provide package level access to Constructor 2 (Classes in other package must not be able to access this constructor). Also provide package level access to the variable pi.
+
+Problem Statement 5: Create two methods and calculate area and circumference of a Circle  In the Circle.java class, create two methods as listed below
+
+a. Method 1 - calculateCircleArea should accept the float radius as parameter and calculate the area (pi*r*r). It should return the result value to the main method where it should be printed in the console.
+
+b. Method 2 – calculateCircumference should accept float radius as parameter and calculate the circumference (2 * pi * r). It should return the result value to the main method where it should be printed in the console.
+
+Call these two methods from the main method in Circle.java by passing appropriate parameters.
+
+## Assignment-12
+
+1.# Factors of a Number
+
+Betsy  teaches her daughter  to find the factors of a given number.  When she provides a number to her daughter, she should tell the factors of that number.  Help her to do this, by writing a program.
+
+Write a class FindFactor.java and write the main method in it.
+
+## Note 
+
+> If the input provided is negative, ignore the sign and provide the output. If the input is zero If the input is zero the output should be “No Factors”.
+
+> Sample Input 1
+54
+
+> Sample Output 1 :
+1, 2, 3, 6, 9, 18, 27, 54
+
+> Sample Input 2 :
+-1869
+
+> Sample Output 2 :
+1, 3, 7, 21, 89, 267, 623, 1869
+
+2.# Find and Replace
+
+Polymens a famous news editor, has daily responsibility of deciding which news stories are printed in the paper. Before that he wants to verify all the words are spelled in a right way. Incase of any misspelled word found, he has to replace it throughout the document without any fail. Polymens needs an application to make his find and replace job easier. 
+
+Implement the given scenario and code accordingly. Refer the samples for read and display the data.
+
+[Search and replace should be case sensitive.  Input can contain words separated by space and full stop.]
+
+  
+
+> Sample Input 1:
+    Enter the string
+    Have a good day
+    
+    Enter the word to be searched:
+    good
+
+    Enter the word to be replaced:
+    nice
+
+> Sample Output 1:
+    Have a nice day
+
+  
+
+---
+
+  
+
+> Sample Input 2:
+
+  
+
+    Enter the string:
+
+    Have a good day
+
+    Enter the word to be searched:
+
+    nice
+
+    Enter the word to be replaced:
+
+    nice
+
+  
+
+> Sample Output 2:
+
+  
+
+    The word nice not found
+
+  
+
+--- 
+
+  
+
+> Sample Input 3:
+
+  
+
+    Enter the string:
+
+    Google PlayStore is a digital distribution service operated and developed by Google.
+
+    Enter the word to be searched:
+
+    Google
+
+    Enter the word to be replaced:
+
+    Yahoo
+
+  
+
+> Sample Output 3:
+
+  
+
+    Yahoo PlayStore is a digital distribution service operated and developed by Yahoo.
+
+  
+
+3.# Find Average Age
+
+  
+
+One of the least Insurance agencies recruited employees for their collection department. Now the HR needs a report as the average age of all the employees working in that department. Write a code to calculate the average age.
+
+  
+
+Implement a method **`calculateAverage(int[] age)`** to calculate the average age and return the result to the caller function. 
+
+  
+
+## Note 
+
+  
+
+1. Age limit should be minimum of 28 years and maximum of 40 years. 
+
+2. Minimum of 2 employees is mandatory to calculate average age, if fails, the output should be "Please enter a valid employee count"
+
+3. If any of the age is invalid, terminate the process and display "Invalid age encountered!"
+
+  
+
+> Sample Input 1:
+
+  
+
+    Enter total no.of employees:
+
+    3
+
+    Enter the age for 3 employees:
+
+    30
+
+    31
+
+    32
+
+  
+
+> Sample Output 1:
+
+  
+
+    The average age is 31.00
+
+  
+
+---
+
+  
+
+> Sample Input 2:
+
+  
+
+    Enter total no.of employees:
+
+    2
+
+    Enter the age for 2 employees:
+
+    29
+
+    36
+
+  
+
+> Sample Output 2:
+
+  
+
+    The average age is 32.50
+
+  
+
+--- 
+
+  
+
+> Sample Input 3:
+
+  
+
+    Enter total no.of employees:
+
+    1
+
+  
+
+> Sample Output 3:
+
+  
+
+    Please enter a valid employee count
+
+  
+
+  
+
+4.# Fuel Consumption Calculator
+
+  
+
+Write a program to calculate the fuel consumption of your vehicle.
+
+  
+
+The program should ask the user to enter the quantity of petrol to fill up the tank and the distance covered till the tank goes dry.
+
+  
+
+Calculate the fuel consumption and display it in the format (liters per 100 kilometers).
+
+  
+
+Convert the same result to the U.S. style of miles per gallon and display the result. If the quantity or distance is zero or negative display "<respective_input> is an Invalid Input".
+
+  
+
+[Note: The US approach of fuel consumption calculation (distance / fuel) is the inverse of the European approach (fuel / distance ). Also note that 1 kilometer is 0.6214 miles, and 1 liter is 0.2642 gallons.]
+
+  
+
+The result should be with two decimal place.
+
+  
+
+To get two decimal place refer the below-mentioned print statement :
+
+  
+
+float cost=670.23;
+
+  
+
+System.out.printf("You need a sum of Rs.%.2f to cover the trip",cost);
+
+  
+
+> Sample Input 1:
+
+  
+
+    Enter the no of liters to fill the tank
+
+    20
+
+    Enter the distance covered
+
+    150
+
+  
+
+> Sample Output 1:
+
+    Liters/100KM
+
+    13.33
+
+    Miles/gallons
+
+    17.64
+
+  
+
+### Explanation
+
+  
+
+For 150 KM fuel consumption is 20 liters, 
+
+  
+
+Then for 100 KM fuel consumption would be (20/150)*100=13.33,
+
+  
+
+Distance is given in KM, we have to convert it to miles (150*0.6214)=93.21,
+
+  
+
+Fuel consumption is given in liters, we have to convert it to gallons (20*0.2642)=5.284, 
+
+  
+
+Then find (miles/gallons)=(93.21/5.284)=17.64
+
+  
+
+> Sample Input 2:
+
+    Enter the no of liters to fill the tank
+
+    -5
+
+  
+
+> Sample Output 2:
+
+    -5 is an Invalid Input
+
+  
+
+> Sample Input 3:
+
+    Enter the no of liters to fill the tank
+
+    25
+
+    Enter the distance covered
+
+    -21
+
+  
+
+> Sample Output 3:
+
+    -21 is an Invalid Input
+
+---
