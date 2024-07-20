@@ -1,5 +1,4 @@
-https://www.sejda.com/share/34c119b712b14a74b4705f8a6f5ea82b-gnutKJtWxul8P4nI6cenJ54w_Lg8EOAtfDMV3aJ2BXsTgEF2WlBmme4jVg_jZeI6
-
+https://www.sejda.com/share/fd3ede44dd1f495ca8800c6b04f20b6a-8bV2EMiLux6bwpzkn7RQMlOHx2XN1Asn42ItLpDn7duWYUkhSmZe67zELc4EGSem
 ## Assignment-1 Language Fundamentals
 
 -   1.  Write a program to accept a double value. Separate the whole
